@@ -1,31 +1,35 @@
 <?php require_once "includes/header.php" ?>
 <h1 class="text-center"> REGISTRATION OF IT CONFERENCE </h1>
 <body>
- 
 
-    <form>
+<form method="GET" action = "success.php">
+  <form>
     <div class="form-group">
-    <label for="exampleInputFirstname">First Name</label>
-    <input type="first name" class="form-control" id="exampleInputFirstName" aria-describedby="FnameHelp">
+    <label for="firstname">First Name</label>
+    <input type="text" class="form-control" id="firstname" name="firstname">
 </div>
-<div class="form-group">
-    <label for="exampleInputLastname">Last Name</label>
-    <input type="last name" class="form-control" id="exampleInputLastName" aria-describedby="LnameHelp">
-    </div>
-    <form action="/action_page.php">
-    <label for="birthday" > Date:</label>
-    <input type="text" id="datepicker"></p>
 
-<form action="/action_page.php">
+<div class="form-group">
+<label for="lastname">Last Name</label>
+    <input  type="text" class="form-control" id="lastname" name="lastname">
+    </div>
+    <form action="/success.php">
+    <label for="birthdate" > Date:</label>
+    <input  type="text" class="form-control" id="datepicker" name="birthdate">></p>
+
+<form action="/success.php.php">
   <label for="Specialty">Specialty:</label>
+  <input  type="text" class="form-control" id="Specialty" name="Specialty">
   <div class="form-group form-check">
     <input type="radio" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1"> DATABASE ADMIN</label>
     </div>
+
     <div class="form-group form-check">
     <input type="radio" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1"> SOFTWARE DEVELOPER</label>
     </div>
+
     <div class="form-group form-check">
     <input type="radio" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1"> WEB ADMINISTRATOR</label>
@@ -33,19 +37,19 @@
 
     <div class="form-group form-check">
   <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" name="email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
 
   <div class="form-group">
-    <label for="exampleInputContactNumber">Contact Number</label>
-    <input type="ContactNumber" class="form-control" id="exampleInputContactNumber">
+    <label for="contactNumber">Contact Number</label>
+    <input type="contactNumber" class="form-control" id="contactNumber" name="contactNumber">
   </div>
 
   <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password"  name="password">
   </div>
 
   <div class="form-group form-check">
